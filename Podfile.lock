@@ -1,8 +1,13 @@
 PODS:
+  - Differentiator (3.1.0)
   - Nimble (7.3.1)
   - RxBlocking (4.3.1):
     - RxSwift (~> 4.0)
   - RxCocoa (4.3.1):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.3.1)
 
@@ -10,21 +15,26 @@ DEPENDENCIES:
   - Nimble
   - RxBlocking
   - RxCocoa
+  - RxDataSources
   - RxSwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Differentiator
     - Nimble
     - RxBlocking
     - RxCocoa
+    - RxDataSources
     - RxSwift
 
 SPEC CHECKSUMS:
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   RxBlocking: 64c051285261ca2339481e91b5f70eb06b03660a
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
 
-PODFILE CHECKSUM: 1815918253f502b7cfae40706ecf14ce0b477d71
+PODFILE CHECKSUM: 22b69e25dd63562a15a38e434c4c742375aa318d
 
 COCOAPODS: 1.6.0.beta.1

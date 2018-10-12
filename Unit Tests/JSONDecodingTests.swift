@@ -19,6 +19,7 @@ class JSONDecodingTests: XCTestCase {
     expect(sut.id).to(equal(10))
     expect(sut.name).to(equal("Clementina DuBuque"))
     expect(sut.email).to(equal("Rey.Padberg@karina.biz"))
+    expect(sut.username).to(equal("Moriah.Stanton"))
 
     expect(sut.address.street).to(equal("Kattie Turnpike"))
     expect(sut.address.suite).to(equal("Suite 198"))

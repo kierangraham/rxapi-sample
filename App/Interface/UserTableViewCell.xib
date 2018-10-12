@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="UserTableViewCell" rowHeight="110" id="fnV-fF-xZt" customClass="UserTableViewCell" customModule="RxAPI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fnV-fF-xZt" id="JOU-UF-ZRD">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jane Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3d-hd-zah">
+                        <rect key="frame" x="20" y="10" width="83" height="24"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jane.doe77@domain.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arc-Cc-PH0">
+                        <rect key="frame" x="20" y="42" width="182.5" height="19.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@janedoe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="24e-CH-RMB">
+                        <rect key="frame" x="111" y="14.5" width="68" height="18"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teststraße 123, Suite 5, Berlin 10115" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YA-oX-FQu">
+                        <rect key="frame" x="20" y="69.5" width="335" height="20.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="1YA-oX-FQu" secondAttribute="trailing" constant="20" id="3RS-Kq-qXQ"/>
+                    <constraint firstItem="24e-CH-RMB" firstAttribute="baseline" secondItem="U3d-hd-zah" secondAttribute="firstBaseline" id="6fp-fF-7um"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1YA-oX-FQu" secondAttribute="bottom" constant="10" id="6oN-pD-X6P"/>
+                    <constraint firstItem="U3d-hd-zah" firstAttribute="leading" secondItem="JOU-UF-ZRD" secondAttribute="leading" constant="20" id="72a-ER-55h"/>
+                    <constraint firstItem="1YA-oX-FQu" firstAttribute="leading" secondItem="arc-Cc-PH0" secondAttribute="leading" id="7nV-2p-5Fr"/>
+                    <constraint firstItem="U3d-hd-zah" firstAttribute="top" secondItem="JOU-UF-ZRD" secondAttribute="top" constant="10" id="9wg-gp-qTr"/>
+                    <constraint firstItem="arc-Cc-PH0" firstAttribute="top" secondItem="U3d-hd-zah" secondAttribute="bottom" constant="8" symbolic="YES" id="J1E-CG-zM6"/>
+                    <constraint firstItem="1YA-oX-FQu" firstAttribute="top" secondItem="arc-Cc-PH0" secondAttribute="bottom" constant="8" symbolic="YES" id="QgL-MT-ieJ"/>
+                    <constraint firstItem="arc-Cc-PH0" firstAttribute="leading" secondItem="U3d-hd-zah" secondAttribute="leading" id="nPl-Ad-MTE"/>
+                    <constraint firstItem="24e-CH-RMB" firstAttribute="leading" secondItem="U3d-hd-zah" secondAttribute="trailing" constant="8" symbolic="YES" id="ov9-n2-I90"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="24e-CH-RMB" secondAttribute="trailing" constant="10" id="sVa-lx-zSR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="1YA-oX-FQu" id="jec-6I-HKw"/>
+                <outlet property="emailLabel" destination="arc-Cc-PH0" id="Yoq-se-p5i"/>
+                <outlet property="nameLabel" destination="U3d-hd-zah" id="4Cz-0q-HKk"/>
+                <outlet property="usernameLabel" destination="24e-CH-RMB" id="uuE-pf-CKm"/>
+            </connections>
+            <point key="canvasLocation" x="92" y="-33.283358320839582"/>
+        </tableViewCell>
+    </objects>
+</document>

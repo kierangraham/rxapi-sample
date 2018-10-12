@@ -10,6 +10,7 @@ abstract_target 'BaseDependencies' do
 
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxDataSources'
 
   target 'RxAPI' do
   end

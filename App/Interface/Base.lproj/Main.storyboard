@@ -12,7 +12,7 @@
         <!--Users-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="UsersViewController" customModule="RxAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,10 +32,44 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Users" id="jV6-3X-j9E"/>
+                    <connections>
+                        <outlet property="tableView" destination="hRz-Cd-ei2" id="ShE-m8-Fuo"/>
+                        <segue destination="PkH-gP-Kar" kind="show" identifier="ShowUserPostsSegue" id="2Eh-n2-HAY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1015" y="-311"/>
+            <point key="canvasLocation" x="1013.6" y="-311.69415292353824"/>
+        </scene>
+        <!--Posts-->
+        <scene sceneID="d10-xF-fgc">
+            <objects>
+                <viewController title="Posts" id="PkH-gP-Kar" customClass="PostsViewController" customModule="RxAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="og0-Z4-lJd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J7G-bq-Pje">
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J7G-bq-Pje" firstAttribute="leading" secondItem="hVO-bf-u74" secondAttribute="leading" id="cTC-IA-0Od"/>
+                            <constraint firstItem="hVO-bf-u74" firstAttribute="bottom" secondItem="J7G-bq-Pje" secondAttribute="bottom" id="itr-Lk-0Wm"/>
+                            <constraint firstItem="J7G-bq-Pje" firstAttribute="top" secondItem="hVO-bf-u74" secondAttribute="top" id="kUA-KH-f5N"/>
+                            <constraint firstItem="hVO-bf-u74" firstAttribute="trailing" secondItem="J7G-bq-Pje" secondAttribute="trailing" id="vcJ-F7-hRJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hVO-bf-u74"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="J7G-bq-Pje" id="IFt-CR-YAl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R32-br-05v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1884" y="-312"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="s39-rO-xMO">

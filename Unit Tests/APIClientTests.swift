@@ -31,6 +31,7 @@ class APIClientTests: XCTestCase {
     let user = User(
       id: 1,
       name: "Test",
+      username: "test.username",
       email: "test@test.com",
       address: Address(
         street: "Teststraße 99",
