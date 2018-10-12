@@ -8,9 +8,18 @@
 
 import Foundation
 
-struct User: Codable {
+struct User: Decodable {
   let id: Int
   let name: String
   let email: String
   let address: Address
+
+  var formattedAddress: String {
+    return [
+      address.street, address.suite,
+      address.city, address.zipcode
+    ]
+    .filter { !$0.isEmpty }
+    .joined(separator: ", ")
+  }
 }

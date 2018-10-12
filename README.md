@@ -30,3 +30,13 @@ Simply **⌘R** in Xcode to run the application.
 
 Tests can be run with **⌘U**
 
+## Future Improvements
+
+Some of the following topics could be explored to improve the app which are beyond scope for now:
+
+1. Better error handling, provide better feedback to the user when an error occurs and allow them to retry
+2. Cache data offline so the app could function without a network connection
+3. Use background refresh to keep data up-to-date when the user chooses to launch
+4. Enhanced UI design
+5. Abstract and decouple data passing between view controllers
+
