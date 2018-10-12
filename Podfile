@@ -1,23 +1,25 @@
-# Uncomment the next line to define a global platform for your project
 platform :ios, '12.0'
 
-target 'RxAPI' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+def test_pods
+  pod 'Nimble'
+end
+
+abstract_target 'Base-Dependencies' do
   use_frameworks!
 
-  # Pods for RxAPI
+  target 'RxAPI' do
 
-  pod 'RxSwift'
-  pod 'RxCocoa'
+    pod 'RxSwift'
+    pod 'RxCocoa'
 
-  target 'RxAPITests' do
-    inherit! :search_paths
-    # Pods for testing
+    target 'RxAPITests' do
+      inherit! :search_paths
+      test_pods
+    end
+
+    target 'RxAPIUITests' do
+      inherit! :search_paths
+      test_pods
+    end
   end
-
-  target 'RxAPIUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end
