@@ -11,6 +11,7 @@
 		2E57CEB12C6F555CB5B7B572 /* Pods_RxAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE05FD3F7B8DC7FB54F71FB /* Pods_RxAPITests.framework */; };
 		660C860C2170B85A0099F901 /* FormattingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C86092170B6C40099F901 /* FormattingTests.swift */; };
 		660C860E2170B8E60099F901 /* XCTestCase+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C860D2170B8E60099F901 /* XCTestCase+Helpers.swift */; };
+		6665F14B2170C4F400B1E25C /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6665F14A2170C4F400B1E25C /* APIClientTests.swift */; };
 		66932E1E21705EB80079A34D /* JSONDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66932E1D21705EB80079A34D /* JSONDecodingTests.swift */; };
 		66932E22217060230079A34D /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 66932E20217060230079A34D /* user.json */; };
 		66932E23217060230079A34D /* post.json in Resources */ = {isa = PBXBuildFile; fileRef = 66932E21217060230079A34D /* post.json */; };
@@ -51,6 +52,7 @@
 		660C86092170B6C40099F901 /* FormattingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattingTests.swift; sourceTree = "<group>"; };
 		660C860D2170B8E60099F901 /* XCTestCase+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Helpers.swift"; sourceTree = "<group>"; };
 		6610432E2170B53800532315 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6665F14A2170C4F400B1E25C /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
 		66932E1D21705EB80079A34D /* JSONDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecodingTests.swift; sourceTree = "<group>"; };
 		66932E20217060230079A34D /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 		66932E21217060230079A34D /* post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = post.json; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			children = (
 				66E73587216F597200F28D7D /* Info.plist */,
 				66932E1F217060230079A34D /* Fixtures */,
+				6665F14A2170C4F400B1E25C /* APIClientTests.swift */,
 				66932E1D21705EB80079A34D /* JSONDecodingTests.swift */,
 				660C86092170B6C40099F901 /* FormattingTests.swift */,
 				660C860D2170B8E60099F901 /* XCTestCase+Helpers.swift */,
@@ -453,13 +456,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RxAPITests/Pods-RxAPITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -488,6 +495,7 @@
 				660C860E2170B8E60099F901 /* XCTestCase+Helpers.swift in Sources */,
 				660C860C2170B85A0099F901 /* FormattingTests.swift in Sources */,
 				66932E1E21705EB80079A34D /* JSONDecodingTests.swift in Sources */,
+				6665F14B2170C4F400B1E25C /* APIClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

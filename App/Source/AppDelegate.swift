@@ -8,6 +8,9 @@
 
 import UIKit
 
+/// Global access to the APIClient for simplicity
+let API = APIClient()
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

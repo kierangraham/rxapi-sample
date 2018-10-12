@@ -2,6 +2,7 @@ platform :ios, '12.0'
 
 def test_pods
   pod 'Nimble'
+  pod 'RxBlocking'
 end
 
 abstract_target 'BaseDependencies' do
